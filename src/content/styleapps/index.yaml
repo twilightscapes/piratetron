@@ -1,14 +1,20 @@
 backgroundImage: /images/styleapps/backgroundImage.svg
+backgroundVideo: >-
+  https://www.youtube.com/embed/ioAgSBnL4dY?si=R7XWkLWWgl2Rx3c-&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=ioAgSBnL4dY&amp;playsinline=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;fs=0&amp;endscreen=0
+  ioAgSBnL4dY?si=R7XWkLWWgl2Rx3c-
 siteFont: Orbitron
 borderRadius: 10px
-lightBg: rgba(192, 185, 185, 0.57)
+lightBg: rgba(194, 254, 255, 0.57)
 lightAccent2: rgba(0, 0, 0, 1)
-darkBg: rgba(34, 34, 34, 1)
-darkAccent2: rgba(0, 0, 0, 1)
-lightHeader: rgba(0, 0, 0, 0.9)
-darkHeader: rgba(0, 0, 0, 0.9)
-lightText: rgba(0, 0, 0, 1)
-darkText: rgba(243, 231, 231, 1)
+darkBg: rgba(9, 16, 17, 1)
+darkAccent2: rgba(0, 179, 214, 0.8)
+lightHeader: rgba(0, 136, 163, 0.6)
+darkHeader: rgba(0, 136, 163, 0.25)
+lightText: rgba(229, 254, 255, 1)
+darkText: rgba(229, 254, 255, 1)
 customCSS: >-
   .backimage{ max-height:50vh; margin-top: 20vh; object-fit: contain
-  !important;  opacity:.4 ; }
+  !important;  opacity:.4 ; } #menu {position:sticky !important; }
+  .profile{max-height:60vh !important;} .font, h2, h3, h1, h4{font-style:Italic
+  !important;} #menu{position:-webkit-sticky !important; position:sticky
+  !important;} 
