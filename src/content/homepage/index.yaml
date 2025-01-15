@@ -11,8 +11,7 @@ youtube:
     loop: false
     start: 0
     videoOnly: false
-cta: Keystatic Cloud Sign Up
-showBioOnHome: true
+showBioOnHome: false
 showApp: false
 showHomeGallery: false
 showResume: false
