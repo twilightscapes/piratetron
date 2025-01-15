@@ -10,9 +10,9 @@ showSwitch: true
 showSearch: false
 showFooter: false
 showCheck: true
-showTitles: false
-showDates: false
+showTitles: true
+showDates: true
 enableImageBlur: true
-showSocial: false
+showSocial: true
 showTags: true
-showShare: false
+showShare: true

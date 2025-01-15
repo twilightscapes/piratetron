@@ -11,10 +11,10 @@ youtube:
     loop: false
     start: 0
     videoOnly: false
-showBioOnHome: false
+showBioOnHome: true
 showApp: false
 showHomeGallery: false
-showResume: false
+showResume: true
 showPosts: true
 showMore: true
 showFaqOnHome: false
