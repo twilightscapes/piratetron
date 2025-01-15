@@ -11,7 +11,7 @@ showSearch: false
 showFooter: false
 showCheck: true
 showTitles: true
-showDates: true
+showDates: false
 enableImageBlur: true
 showSocial: true
 showTags: true
