@@ -1,12 +1,12 @@
 logoImage: /images/logo/logoImage.webp
-defaultView: grid
+defaultView: swipe
 MAX_POSTS: 10
 MAX_POSTS_PER_PAGE: 20
 showHeader: false
 showLogo: true
-showHome: true
-showTheme: true
-showSwitch: true
+showHome: false
+showTheme: false
+showSwitch: false
 showSearch: false
 showFooter: false
 showCheck: true
