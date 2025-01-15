@@ -1,6 +1,7 @@
 showFeature: true
 featureImage:
   src: /images/homepage/featureImage/src.webp
+  alt: Enter The Grid
 youtube:
   discriminant: false
 showBioOnHome: true
