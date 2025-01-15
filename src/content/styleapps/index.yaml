@@ -9,13 +9,12 @@ darkBg: rgba(9, 16, 17, 1)
 darkAccent2: rgba(0, 179, 214, 0.8)
 lightHeader: rgba(0, 0, 0, 0.8)
 darkHeader: rgba(0, 0, 0, 0.8)
-lightText: rgba(7, 34, 39, 1)
-darkText: rgba(229, 254, 255, 1)
+lightText: rgba(214, 228, 229, 1)
+darkText: rgba(214, 228, 229, 1)
 customCSS: >-
   .backimage{ max-height:50vh; margin-top: 20vh; object-fit: contain
   !important;  opacity:.4 ; } #menu {position:sticky !important; }
   .profile{max-height:60vh !important;} .font, h2, h3, h1, h4{font-style:italic
   !important;} #menu{position:-webkit-sticky !important; position:sticky
   !important;} .headerlogo {margin-left:10px; max-height:60px;} body.home
-  {color:yellow !important;} .home { @apply text-white dark:text-textColor;}
-  [data-theme="light"] .home {color: white !important;}
+  {color:yellow !important;} 
