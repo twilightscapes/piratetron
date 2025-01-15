@@ -4,11 +4,11 @@ backgroundVideo: >-
 siteFont: Bruno Ace SC
 borderRadius: 10px
 lightBg: rgba(225, 245, 249, 0.81)
-lightAccent2: rgba(0, 179, 214, 0.8)
+lightAccent2: rgba(1, 227, 244, 0.8)
 darkBg: rgba(9, 16, 17, 1)
 darkAccent2: rgba(0, 179, 214, 0.8)
-lightHeader: rgba(0, 0, 0, 0.8)
-darkHeader: rgba(0, 0, 0, 0.8)
+lightHeader: rgba(1, 227, 244, 0.38)
+darkHeader: rgba(1, 227, 244, 0.38)
 lightText: rgba(214, 228, 229, 1)
 darkText: rgba(214, 228, 229, 1)
 customCSS: >-
