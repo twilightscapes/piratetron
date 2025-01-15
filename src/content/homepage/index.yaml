@@ -14,7 +14,7 @@ youtube:
 showBioOnHome: true
 showApp: false
 showHomeGallery: false
-showResume: true
+showResume: false
 showPosts: true
 showMore: true
 showFaqOnHome: false
@@ -22,8 +22,8 @@ showTestOnHome: false
 pitch: How It Works
 pitch2: Social Media That YOU Control
 pitch3: High Seas Freedom
-featureOrder: 1
-bioOrder: 3
+featureOrder: .nan
+bioOrder: 1
 appOrder: .nan
 galleryOrder: .nan
 postsOrder: 2
