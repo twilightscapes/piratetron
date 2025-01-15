@@ -6,7 +6,7 @@ showHeader: false
 showLogo: true
 showHome: false
 showTheme: false
-showSwitch: false
+showSwitch: true
 showSearch: false
 showFooter: false
 showCheck: true
