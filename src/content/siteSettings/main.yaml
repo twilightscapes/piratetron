@@ -13,6 +13,6 @@ showCheck: true
 showTitles: false
 showDates: false
 enableImageBlur: true
-showSocial: true
+showSocial: false
 showTags: true
-showShare: true
+showShare: false
