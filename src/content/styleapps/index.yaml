@@ -16,4 +16,5 @@ customCSS: >-
   !important;  opacity:.4 ; } .font, h2, h3, h1, h4{font-style:italic
   !important;}  #profile img{max-height:60vh !important; max-width:1000px;
   width:90%;} .featured img{opacity:.95;} .vidbox{opacity:.6; height: 110vh
-  !important; width: 110vw !important;}
+  !important; width: 110vw !important;} body:has(.blogpost) .vidbox
+  {display:none !important;}
