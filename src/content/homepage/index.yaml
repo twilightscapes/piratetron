@@ -1,3 +1,7 @@
+sectionOrdering:
+  - feature
+  - bio
+  - posts
 featureImage:
   src: /images/homepage/featureImage/src.webp
   alt: Enter The Grid
@@ -7,14 +11,4 @@ showMore: false
 pitch: How It Works
 pitch2: Social Media That YOU Control
 pitch3: High Seas Freedom
-sectionOrdering:
-  - feature
-  - bio
-  - posts
-  - resume
-  - gallery
-  - testimonials
-  - infoblock1
-  - infoblock2
-  - infoblock3
 postsectiontitle: Best moments from the film
