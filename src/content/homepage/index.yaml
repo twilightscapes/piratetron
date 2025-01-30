@@ -15,15 +15,14 @@ showTestOnHome: false
 pitch: How It Works
 pitch2: Social Media That YOU Control
 pitch3: High Seas Freedom
-featureOrder: .nan
-bioOrder: 1
-appOrder: .nan
-galleryOrder: .nan
-postsOrder: 2
-resumeOrder: .nan
-faqOrder: .nan
-testimonialsOrder: .nan
-infoblockOrder: .nan
-infoblock2Order: .nan
-infoblock3Order: .nan
+sectionOrdering:
+  - feature
+  - bio
+  - posts
+  - resume
+  - gallery
+  - testimonials
+  - infoblock1
+  - infoblock2
+  - infoblock3
 postsectiontitle: Best moments from the film
