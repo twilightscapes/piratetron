@@ -1,0 +1,20 @@
+siteFont: Bruno Ace SC
+borderRadius: 10px
+backgroundVideo: https://www.youtube.com/embed/ioAgSBnL4dY?si=R7XWkLWWgl2Rx3c-&controls=0&autoplay=1&mute=1&loop=1&playlist=ioAgSBnL4dY&playsinline=1&modestbranding=1&rel=0&showinfo=0&fs=0&cc_load_policy=0&disablekb=1&iv_load_policy=3
+lightBg: rgba(202, 235, 242, 0.81)
+lightAccent2: rgba(1, 227, 244, 0.8)
+darkBg: rgba(9, 16, 17, 1)
+darkAccent2: rgba(0, 179, 214, 0.8)
+lightHeader: rgba(2, 179, 192, 0.52)
+darkHeader: rgba(1, 227, 244, 0.16)
+lightCardBg: rgba(2, 179, 192, 0.52)
+darkCardBg: rgba(2, 179, 192, 0.52)
+lightText: rgba(214, 228, 229, 1)
+darkText: rgba(214, 228, 229, 1)
+customCSS: >-
+  .backimage{ max-height:50vh; margin-top: 20vh; object-fit: contain
+  !important;  opacity:.4 ; } .font, h2, h3, h1, h4{font-style:italic
+  !important;}  #profile img{max-height:60vh !important; max-width:1000px;
+  width:90%;} .featured img{opacity:.95;} .vidbox{opacity:.6; height: 110vh
+  !important; width: 110vw !important;} body:has(.blogpost) .vidbox
+  {display:none !important;}

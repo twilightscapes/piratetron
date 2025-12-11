@@ -24,11 +24,13 @@ export function getPostSortDate(post: CollectionEntry<"post">) {
 export function sortMDByDate(posts: CollectionEntry<"post">[], prioritizeOrder = false) {
 	return posts.sort((a, b) => {
 		if (prioritizeOrder) {
-			if (a.data.order?.value !== undefined && b.data.order?.value !== undefined) {
-				return a.data.order.value - b.data.order.value;
-			}
-			if (a.data.order?.value !== undefined) return -1;
-			if (b.data.order?.value !== undefined) return 1;
+			// Sticky posts come first
+			const aIsSticky = a.data.sticky === true;
+			const bIsSticky = b.data.sticky === true;
+			
+			if (aIsSticky && !bIsSticky) return -1;
+			if (!aIsSticky && bIsSticky) return 1;
+			// Both sticky or both not sticky: fall through to date sorting
 		}
 		const aDate = getPostSortDate(a).valueOf();
 		const bDate = getPostSortDate(b).valueOf();
@@ -46,6 +48,27 @@ export function groupPostsByYear(posts: CollectionEntry<"post">[]) {
 			acc[year] = [];
 		}
 		acc[year]?.push(post);
+		return acc;
+	}, {});
+}
+
+/** groups posts by year and month (based on option siteConfig.sortPostsByUpdatedDate)
+ *  Returns nested structure: { year: { month: [posts] } }
+ *  Note: This function doesn't filter draft posts, pass it the result of getAllPosts above to do so.
+ */
+export function groupPostsByYearMonth(posts: CollectionEntry<"post">[]) {
+	return posts.reduce<Record<string, Record<string, CollectionEntry<"post">[]>>>((acc, post) => {
+		const date = getPostSortDate(post);
+		const year = date.getFullYear().toString();
+		const month = date.toLocaleString('en-US', { month: 'long' });
+		
+		if (!acc[year]) {
+			acc[year] = {};
+		}
+		if (!acc[year][month]) {
+			acc[year][month] = [];
+		}
+		acc[year][month]?.push(post);
 		return acc;
 	}, {});
 }

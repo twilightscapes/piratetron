@@ -1,18 +1,27 @@
 ---
-import type { HTMLAttributes } from "astro/types";
+import { getFormattedDate } from '../utils/date';
 
-import { getFormattedDate } from "@/utils";
+interface Props {
+  date: Date | string;
+  class?: string;
+}
 
-type Props = HTMLAttributes<"time"> & {
-	date: Date;
-	dateTimeOptions?: Intl.DateTimeFormatOptions;
-};
+const { date, class: className } = Astro.props;
+const formattedDate = getFormattedDate(date);
 
-const { date, dateTimeOptions, ...attrs } = Astro.props;
-
-const postDate = getFormattedDate(date, dateTimeOptions);
+// Convert to Date object for datetime attribute
+let dateObj: Date;
+if (date instanceof Date) {
+  dateObj = date;
+} else if (typeof date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(date)) {
+  // For date-only strings (YYYY-MM-DD), treat as local date not UTC
+  const [year, month, day] = date.split('-').map(Number);
+  dateObj = new Date(year, month - 1, day);
+} else {
+  dateObj = new Date(date);
+}
 ---
 
-<time datetime={date.toISOString()} {...attrs}>
-	{postDate}
+<time datetime={dateObj.toISOString()} class={className}>
+  {formattedDate}
 </time>
