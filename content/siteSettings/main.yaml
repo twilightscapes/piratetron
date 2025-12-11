@@ -1,4 +1,4 @@
-defaultView: grid
+defaultView: swipe
 themeMode: dark
 MAX_POSTS: 10
 MAX_POSTS_PER_PAGE: 20
